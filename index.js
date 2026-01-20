@@ -1,40 +1,42 @@
-let score = 0;
+let homeScore = 0;
+let guestScore = 0;
 
 let homeEl = document.getElementById('home-team-score')
 let guestEl = document.getElementById('guest-team-score')
 
 function homeTeamAddOne() {
-    score += 1;
-    homeEl.textContent = score;
+    homeScore += 1;
+    homeEl.textContent = homeScore;
 }
 
 function homeTeamAddTwo() {
-    score += 2;
-    homeEl.textContent = score;
+    homeScore += 2;
+    homeEl.textContent = homeScore;
 }
 
 function homeTeamAddThree() {
-    score += 3;
-    homeEl.textContent = score;
+    homeScore += 3;
+    homeEl.textContent = homeScore;
 }
 
 function guestTeamAddOne() {
-    score += 1;
-    guestEl.textContent = score;
+    guestScore += 1;
+    guestEl.textContent = guestScore;
 }
 
 function guestTeamAddTwo() {
-    score += 2;
-    guestEl.textContent = score;
+    guestScore += 2;
+    guestEl.textContent = guestScore;
 }
 
 function guestTeamAddThree() {
-    score += 3;
-    guestEl.textContent = score;
+    guestScore += 3;
+    guestEl.textContent = guestScore;
 }
 
 function newGame() {
     homeEl.textContent = 0;
     guestEl.textContent = 0;
-    score = 0;
+    homeScore = 0;
+    guestScore = 0;
 }
