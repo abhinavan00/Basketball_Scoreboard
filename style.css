@@ -1,0 +1,125 @@
+body {
+    font-family: "Sora", sans-serif;
+}
+
+#container {
+    background: #2C2C2C;
+    height: 800px;
+    width: 700px;
+    margin: 30px auto;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#background-img {
+    width: 500px;
+    height: 670px;           /* Fills height of card */
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    right: 60px;           /* Pushes container slightly outside the left edge */
+    top: 65px;
+    box-shadow: 5px 5px 60px black;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -40px;              /* Adjust vertically */
+    left: 60px;            /* Adjust horizontally to sit across both areas */
+    z-index: 10; 
+}
+
+#home-team-score {
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    font-weight: 900;
+    font-size: 180px;
+}
+
+#home-team-batch {
+    color: white;
+    position: absolute;
+    top: 338px;
+    left: 95px;
+}
+
+#home-team-batch-bg {
+    width: 250px;
+    height: 35px;
+    background: #F01D06;
+    position: absolute;
+    top: 350px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+#home-team-buttons {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    background: #F01D06;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    border: 2px solid #F01D06;
+    color: #F01D06;
+}
+
+#guest-team-score {
+    color: white;
+    position: absolute;
+    bottom: -25px;
+    left: 60px;
+    font-weight: 900;
+    font-size: 180px;   
+}
+
+#guest-team-batch-bg {
+    width: 250px;
+    height: 35px;
+    background: #F01D06;
+    position: absolute;
+    bottom: 115px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);   
+}
+
+#guest-team-batch {
+    color: white;
+    position: absolute;
+    bottom: 103px;
+    left: 95px;   
+}
+
+#guest-team-buttons {
+    position: absolute;
+    top: 700px;
+    left: 30px;
+}
+
+#new-game-btn {
+    width: 200px;
+    position: absolute;
+    bottom: 280px;
+    right: 20px;
+    box-shadow: 5px 5px 20px black;
+}
